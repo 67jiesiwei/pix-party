@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Mode Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="game-page">
+  <div class="site-shell">
+    <header class="topbar game-topbar">
+      <a class="brand" href="index.html" aria-label="Back to Math Mode home">
+        <span class="brand-mark" aria-hidden="true">+</span>
+        <span>math<span class="brand-accent">mode</span></span>
+      </a>
+      <div class="header-actions"><a class="back-link" href="index.html"><span aria-hidden="true">←</span> All games</a><button class="save-points-button" type="button" data-save-points>Save points &amp; power-ups</button><a class="shop-link" href="shop.html">Shop</a><span class="points-pill">✦ <strong data-points>0</strong> points</span></div>
+    </header>
+
+    <main class="game-main">
+      <div class="game-header">
+        <div><p class="eyebrow" id="game-kicker">QUICK MATH GAME</p><h1 id="game-title">Loading game…</h1></div>
+        <div class="game-stat"><span class="stat-label">SCORE</span><strong id="score">0</strong></div>
+      </div>
+      <div id="game-mount" class="game-mount"></div>
+    </main>
+    <footer class="site-footer"><span>mathmode © 2026</span><span>Small steps. Smart moves. <span class="footer-star">✦</span></span></footer>
+  </div>
+  <script src="points.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

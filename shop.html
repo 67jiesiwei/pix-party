@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Mode Shop</title>
+  <meta name="description" content="Spend your Math Mode points on fun upgrades." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="shop-page">
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Math Mode home">
+        <span class="brand-mark" aria-hidden="true">+</span>
+        <span>math<span class="brand-accent">mode</span></span>
+      </a>
+      <div class="header-actions">
+        <a class="back-link" href="index.html">← Games</a>
+        <button class="save-points-button" type="button" data-save-points>Save points &amp; power-ups</button><span class="points-pill">✦ <strong data-points>0</strong> points</span>
+      </div>
+    </header>
+
+    <main class="shop-main">
+      <section class="shop-hero">
+        <div>
+          <p class="eyebrow">THE REWARD SHOP</p>
+          <h1>Spend your<br /><span>smart points.</span></h1>
+          <p class="hero-text">Play games to earn points, then pick an upgrade to make your next round even more fun.</p>
+        </div>
+        <div class="wallet-card">
+          <span class="wallet-label">YOUR WALLET</span>
+          <strong id="shop-points">0</strong>
+          <span>smart points</span>
+          <a class="primary-button" href="index.html#games">Play for points <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="shop-section" aria-labelledby="shop-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">CHOOSE AN ITEM</p><h2 id="shop-title">Little boosts. Big fun.</h2></div>
+          <p class="section-count"><span>03</span> shop items</p>
+        </div>
+        <div class="shop-grid" id="shop-items"></div>
+        <p class="small-note" id="shop-message">Earn points and buy power-ups, then click Save points &amp; power-ups or lose unsaved progress.</p>
+      </section>
+
+      <section class="shop-rules">
+        <strong>How it works</strong>
+        <span>Hit enemies, cross bridges, and click 67 to earn points.</span>
+        <span>Click Save points &amp; power-ups to keep progress — no account needed.</span>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>mathmode © 2026</span><span>Made for curious minds <span class="footer-star">✦</span></span></footer>
+  </div>
+  <script src="points.js"></script>
+  <script src="shop.js"></script>
+</body>
+</html>

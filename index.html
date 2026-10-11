@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Mode — Quick Math Games</title>
+  <meta name="description" content="Quick, colorful 2D math games for curious kids." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="home-page">
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Math Mode home">
+        <span class="brand-mark" aria-hidden="true">+</span>
+        <span>math<span class="brand-accent">mode</span></span>
+      </a>
+      <div class="header-actions"><button class="save-points-button" type="button" data-save-points>Save points &amp; power-ups</button><a class="shop-link" href="shop.html">Shop</a><span class="points-pill">✦ <strong data-points>0</strong> points</span></div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">FAST · FUN · FREE</p>
+          <h1 id="page-title">Tiny games.<br /><span>Big brain energy.</span></h1>
+          <p class="hero-text">Jump into a quick 2D math challenge and see how many smart moves you can make.</p>
+          <a class="primary-button" href="#games">Choose a game <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-label="A friendly illustrated math character">
+          <div class="star star-one">✦</div>
+          <div class="star star-two">✦</div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="hero-sun"><span>×</span></div>
+          <div class="hero-planet planet-one"></div>
+          <div class="hero-planet planet-two"></div>
+          <div class="hero-card card-equation">8 <span>+</span> 7 <b>=?</b></div>
+          <div class="hero-card card-score"><strong>+120</strong><small>smart points</small></div>
+          <div class="hero-character">
+            <div class="character-antenna"></div>
+            <div class="character-face"><span class="eye eye-left"></span><span class="eye eye-right"></span><span class="smile"></span></div>
+            <div class="character-body"><span class="body-badge">+</span></div>
+            <div class="character-foot foot-left"></div><div class="character-foot foot-right"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="games-section" id="games" aria-labelledby="games-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE GAME ZONE</p>
+            <h2 id="games-title">Pick your power-up</h2>
+          </div>
+          <p class="section-count"><span>03</span> quick games</p>
+        </div>
+
+        <div class="game-grid">
+          <a class="game-card card-bow" href="game.html?game=bowmasters">
+            <div class="card-topline"><span class="game-number">01</span><span class="play-pill">PLAY <span aria-hidden="true">↗</span></span></div>
+            <div class="game-illustration bow-illustration" aria-hidden="true">
+              <div class="bow-cloud cloud-a"></div><div class="bow-cloud cloud-b"></div>
+              <div class="bow-sun"></div><div class="bow-hill hill-back"></div><div class="bow-hill hill-front"></div>
+              <div class="bow-target"><span>10</span><i>+</i></div>
+              <div class="bow-archer"><div class="archer-head"></div><div class="archer-body"></div><div class="archer-bow"></div></div>
+              <div class="bow-arrow"></div>
+            </div>
+            <div class="game-card-copy"><h3>Bowmasters</h3><p>Archery shooting + mouse aim</p><span class="card-link">Take the shot <b aria-hidden="true">→</b></span></div>
+          </a>
+
+          <a class="game-card card-bridge" href="game.html?game=bridge">
+            <div class="card-topline"><span class="game-number">02</span><span class="play-pill">PLAY <span aria-hidden="true">↗</span></span></div>
+            <div class="game-illustration bridge-illustration" aria-hidden="true">
+              <div class="bridge-skyline"><span></span><span></span><span></span><span></span></div>
+              <div class="bridge-cloud bridge-cloud-a"></div><div class="bridge-cloud bridge-cloud-b"></div>
+              <div class="bridge-water"></div><div class="bridge-cliff cliff-left"></div><div class="bridge-cliff cliff-right"></div>
+              <div class="bridge-road"><span class="road-dash"></span><span class="road-dash"></span><span class="road-dash"></span></div>
+              <div class="bridge-car"><span class="car-window"></span><i></i><i></i></div>
+              <div class="bridge-pencil">✎</div>
+            </div>
+            <div class="game-card-copy"><h3>Draw Bridge</h3><p>Free-draw a path + cross the gap</p><span class="card-link">Build a bridge <b aria-hidden="true">→</b></span></div>
+          </a>
+
+          <a class="game-card card-mine" href="game.html?game=mining">
+            <div class="card-topline"><span class="game-number">03</span><span class="play-pill">PLAY <span aria-hidden="true">↗</span></span></div>
+            <div class="game-illustration mine-illustration" aria-hidden="true">
+              <div class="mine-spark spark-a">✦</div><div class="mine-spark spark-b">✦</div>
+              <div class="mine-cloud mine-cloud-a"></div><div class="mine-cloud mine-cloud-b"></div>
+              <div class="mine-mountain mountain-back"></div><div class="mine-mountain mountain-front"></div>
+              <div class="mine-cart"><div class="cart-gold"></div><div class="cart-wheel wheel-a"></div><div class="cart-wheel wheel-b"></div></div><div class="mine-67-badge">67</div>
+              <div class="mine-pickaxe"><span></span></div>
+            </div>
+            <div class="game-card-copy"><h3>67 Clicker</h3><p>Tap 67 + build your score</p><span class="card-link">Make it rain <b aria-hidden="true">→</b></span></div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>mathmode © 2026</span><span>Made for curious minds <span class="footer-star">✦</span></span></footer>
+  </div>
+  <script src="points.js"></script>
+</body>
+</html>
